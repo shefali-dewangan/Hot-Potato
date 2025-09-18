@@ -222,6 +222,8 @@ GameObject:
   - component: {fileID: 1016301259}
   - component: {fileID: 1016301258}
   - component: {fileID: 1016301260}
+  - component: {fileID: 1016301261}
+  - component: {fileID: 1016301262}
   m_Layer: 0
   m_Name: orange_0_0
   m_TagString: Untagged
@@ -293,7 +295,7 @@ Transform:
   m_GameObject: {fileID: 1016301257}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.8735647, y: 1.3697312, z: 0}
+  m_LocalPosition: {x: 0.21, y: 0.72, z: 0}
   m_LocalScale: {x: 0.9, y: 0.9, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -335,6 +337,46 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.985
+--- !u!50 &1016301261
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1016301257}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 6200000, guid: 32a09e65165c4b04abffce9f68d92112, type: 2}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!114 &1016301262
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1016301257}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ad0846d13ff5104194c91731f0e9f5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
 --- !u!1 &1784953692
 GameObject:
   m_ObjectHideFlags: 0
@@ -347,9 +389,9 @@ GameObject:
   - component: {fileID: 1784953693}
   - component: {fileID: 1784953695}
   - component: {fileID: 1784953696}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: mushroom_0
-  m_TagString: Untagged
+  m_TagString: mushroom
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -418,7 +460,7 @@ Transform:
   m_GameObject: {fileID: 1784953692}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.08, y: -3.73, z: 0}
+  m_LocalPosition: {x: 0.07, y: -3.69, z: 0}
   m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
   m_ConstrainProportionsScale: 0
   m_Children: []
